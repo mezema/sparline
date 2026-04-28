@@ -1,0 +1,14 @@
+[project]
+name = "scriptdrill-agent"
+version = "0.1.0"
+description = "Voice coaching agent for ScriptDrill"
+requires-python = ">=3.10"
+dependencies = [
+    "livekit-agents[openai]~=1.4",
+    "livekit-plugins-openai~=1.4",
+    "python-dotenv",
+    "httpx",
+]
+
+[tool.setuptools]
+py-modules = ["main"]
